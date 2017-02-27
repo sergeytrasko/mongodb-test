@@ -1,5 +1,14 @@
 'use strict';
 
+const envalid = require('envalid');
+
+const {str} = envalid;
+
+envalid.cleanEnv(process.env, {
+  MONGODB_URI: str()
+});
+
+
 require('babel-register')();
 
 const app = require('./src/app');

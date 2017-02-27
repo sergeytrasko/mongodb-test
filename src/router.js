@@ -1,3 +1,5 @@
+import service from './person-service';
+
 const router = require('koa-router')();
 
 router.get('/', async ctx => {
@@ -5,7 +7,8 @@ router.get('/', async ctx => {
 });
 
 router.get('/:id', async ctx => {
-  ctx.response.body = 'hello, ' + ctx.params.id;
+  const person = await service.getByName(`person ${ctx.params.id}`);
+  ctx.response.body = person;
 });
 
 export default router;

@@ -15,12 +15,14 @@
     "babel-plugin-transform-async-to-generator": "6.16.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.18.0",
     "babel-register": "6.18.0",
+    "envalid": "2.4.2",
     "koa": "2.0.0",
     "koa-adapter-bluebird": "0.0.1",
     "koa-convert": "1.2.0",
     "koa-cors": "0.0.16",
     "koa-morgan": "1.0.1",
-    "koa-router": "7.0.1"
+    "koa-router": "7.0.1",
+    "mongoose": "4.8.5"
   },
   "devDependencies": {
     "nodemon": "1.11.0"
