@@ -1,0 +1,7 @@
+machine:
+  pre:
+    - nvm install 7.6.0
+
+test:
+  override:
+    - nvm use 7.6.0 && npm test
